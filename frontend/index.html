@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Lab Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="employees">
+            <h1>Employees</h1>
+            <div class="list">
+                <h2>List of Employees</h2>
+                <ul class="employee-list"></ul>
+                <form class="search">
+                    <input type="text" id="search-input" placeholder="Enter first name..." autocomplete="off">
+                    <button class="search-btn" type="submit">Search and View Employees</button>
+                </form>
+            </div>
+            <div class="add-form">
+                <h2>Add Employees</h2>
+                <form class="add">
+                    <div class="add-inputs">
+                        <input type="text" id="add-firstname-input" placeholder="First name" autocomplete="off">
+                        <input type="text" id="add-lastname-input" placeholder="Last name" autocomplete="off">
+                        <input type="number" id="add-age-input" placeholder="Age" autocomplete="off">
+                        <label>
+                            Married?
+                            <input type="checkbox" id="add-isMarried">
+                        </label>
+                    </div>
+                    <button class="add-btn" type="submit">Add Employee</button>
+                </form>
+            </div>
+            <div class="edit-form">
+                <h2>Edit Employees</h2>
+                <form class="edit">
+                    <div class="edit-inputs">
+                        <input type="text" id="edit-firstname-input" placeholder="First name" autocomplete="off">
+                        <input type="text" id="edit-lastname-input" placeholder="Last name" autocomplete="off">
+                        <input type="number" id="edit-age-input" placeholder="Age" autocomplete="off">
+                        <label>
+                            Married?
+                            <input type="checkbox" id="edit-isMarried">
+                        </label>
+                    </div>
+                    <input type="hidden" id="edit-id">
+                    <button class="edit-btn" type="submit">Edit Employee</button>
+                </form>
+            </div>
+        </div>
+        <div class="view-employees">
+            <h2>View Employee/s Info</h2>
+            <div class="employee-info"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
